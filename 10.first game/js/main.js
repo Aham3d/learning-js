@@ -1,4 +1,4 @@
-// first game
+// first game. rps v1
 
 let playGame = confirm("shall we play rock, paper and sciccor?");
 if(playGame) {
