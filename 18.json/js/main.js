@@ -6,6 +6,7 @@ JSON is a text format that is completely language independent.
 Meanind JSON is used to send and receive data in many languages not just in javascript
 sending JSON will convert the object into a string and also we'll lose the method functin present in it 
 recieving JSON will convert the string into a object again and as we have lost the method function while sending it we cannot get that back
+
 */
 
 const myObj = {
@@ -29,5 +30,5 @@ console.log(sendJSON.name); // we cannot access the name as we can access from o
 
 const receiveJSON = JSON.parse(sendJSON); //recieve JSON will be recieved as an object again. but also we cannot access(display) the method as we lost it while sending JSON
 console.log(receiveJSON); 
-console.log(typeof receiveJSON);
+console.log(typeof receiveJSON); //object again
 
