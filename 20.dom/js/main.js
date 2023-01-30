@@ -93,7 +93,7 @@ const createDivs = (parent, iter) => {
 }
 
 for(let i = 0; i <12; i++) {
-    createDivs(view2, i);
+    createDivs(view2, i); //i = 12(means 12 boxes)
 }
 
 
