@@ -65,7 +65,7 @@
 // deleting the view1 and text from the view2 and re-creating the view1 in view2
 
 // displaying view2 and hiding the view1
-view1.style.display = "none";
+view1.style.display = "flex ";
 view2.style.display = "flex"; 
 
 // basic styling to get started
