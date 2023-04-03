@@ -1,6 +1,6 @@
 // conditionals: switch statements 
 
-// sytan 
+// syntax 
 // switch (expression or value) {
 
 // case choice1:
@@ -41,21 +41,21 @@
 
 
 // generating 5 random numbers
-// switch(Math.floor(Math.random() * 5 + 1)) {
-//     case 1:
-//         console.log(1);
-//         break; 
-//     case 2:
-//         console.log(2); 
-//         break; 
-//     case 3:
-//         console.log(3);
-//         break; 
+switch(Math.floor(Math.random() * 5 + 1)) {
+    case 1:
+        console.log(1);
+        break; 
+    case 2:
+        console.log(2); 
+        break; 
+    case 3:
+        console.log(3);
+        break; 
 
-//     default:
-//         console.log("no match");
+    default:
+        console.log("no match");
 
-// }
+}
 
 
 

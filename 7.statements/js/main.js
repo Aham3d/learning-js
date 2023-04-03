@@ -3,7 +3,7 @@
 
 
 // 1
-// let soup = "veg noodle soup"; 
+// let soup = "chicken noodle soup"; 
 // let reply; 
 
 // if(soup === "chicken noodle soup") {
@@ -19,8 +19,8 @@
 
 // 2 
 // let customerIsBanned = false; 
-// let soup = true;
-// let crackers = true;
+// let soup = "veg noodle soup";
+// let crackers = false;
 // let reply;
 
 
@@ -42,8 +42,8 @@
 
 
 // 3 
-// let testScore = 80; 
-// let collegeStudent = false;
+// let testScore = false; 
+// let collegeStudent = true;
 // let grade;
 
 // if(testScore >= 90) {
@@ -61,16 +61,14 @@
 //         grade = "F";
 //     }
 // }
-
-
 // console.log(grade)
 
 
 
 // 4 
 
-let player ="paper"; 
-let computer = "scissor";
+let player ="rock";
+let computer = "rock";
 let message; 
 
 if(player === computer) {
