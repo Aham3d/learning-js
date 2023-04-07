@@ -12,7 +12,7 @@ if(yourname) {
     // console.log(yourname.trim().length);
     console.log(yourname.trim());
 } else {
-    console.log("you didn't enter your name"); 
+    console.log("you didn't enter your name");
 }
   
 
