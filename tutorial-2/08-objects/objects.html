@@ -55,6 +55,16 @@
     //logging function
     product2.fun();
 
+    // converting product 2 to JSON.
+    // the result will be in string and also for every property and value will be under ""
+    console.log(JSON.stringify(product2)); 
+
+    // converting back json string into js object
+    const jsonString = JSON.stringify(product2); 
+    console.log(JSON.parse(jsonString)); 
+
+
+
   </script>
 </body>
 </html>

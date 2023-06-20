@@ -33,11 +33,7 @@
   
   <script>
 
-    const score = {
-      wins: 0, 
-      lost: 0, 
-      ties: 0
-    }; 
+    const score = JSON.parse(localStorage.getItem('score'));
 
     function playGame(PlayerMove) {
       const computerMove = pickComputerMove();
@@ -71,12 +67,14 @@
         } 
       }
 
+      localStorage.setItem('score', JSON.stringify(score));
+
       // updating the score
       if(result === 'you win') {
         score.wins += 1; 
       } else if(result === 'you lose') {
         score.lost += 1; 
-      } else if(result === ' Tie') {
+      } else if(result === 'Tie') {
         score.ties += 1;
       }
 
