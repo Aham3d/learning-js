@@ -9,6 +9,7 @@
   
 
   <script>
+    // 1
     const product = {
       name: 'socks', 
       price: '1090'
@@ -29,6 +30,31 @@
     // deleting the same property
     delete product.newProperty; 
     console.log(product);
+
+    // 2
+    const product2 = {
+      name: "shirt", 
+      'delivery-time': '1 day', 
+      // nesting another object inside an object
+      rating: {
+        stars: 4.5, 
+        count: 87
+      }, 
+      // adding function inside an oject
+      fun: function function1() {
+        console.log('function inside object');
+      }
+    }
+
+    console.log(product2); 
+    console.log(product2.name); 
+    console.log(product2['name']); 
+    console.log(product2['delivery-time']); 
+    console.log(product2.rating); 
+
+    //logging function
+    product2.fun();
+
   </script>
 </body>
 </html>
