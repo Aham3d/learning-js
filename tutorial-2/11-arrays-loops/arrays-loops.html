@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>arrays and loops</title>
+</head>
+<body>
+  <!-- it is another type of  or obbject -->
+  <!-- which represents a list of other values -->
+
+
+  <script>
+    const myArray = [10, 20, 30]; 
+    console.log(myArray); //displays all the values in the console
+
+    console.log(myArray[2]) //displays specific values //30
+    
+    myArray[2] = 99; //can change the values
+
+    console.log(myArray[2]) //displays updated index no.
+
+    //length property
+    console.log(myArray.length);
+
+    const myArray2 = [1, 'hello', true, {name: 'socks'}, [1,2]]
+    console.log(myArray2)
+
+    // push method
+    myArray2.push(100); //adds the value at the end of the index
+    console.log(myArray2); 
+
+    //splice method
+    myArray2.splice(0, 1); //.splice(index, number of values from)
+    console.log(myArray2);
+
+  </script>
+</body>
+</html>
