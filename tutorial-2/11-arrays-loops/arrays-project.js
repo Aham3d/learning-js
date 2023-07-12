@@ -9,6 +9,6 @@ function add() {
   todoList.push(inputValue);
   console.log(todoList);
 
-  inputValue = '';  
+  inputEl = '';  
   
 }
