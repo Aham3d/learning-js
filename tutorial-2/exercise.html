@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Excercise 11</title>
+</head>
+<body>
+  
+
+  <script>
+    // 11a
+    const nums = [10,20,30];
+    nums[2] = 99;
+    console.log('11a')
+    console.log(nums);
+    // alternate solution
+    // nums[nums.length-1] = 89;
+
+    // 11b
+    arr = [1,2,7]
+    function getLastValue(arr) {
+      const lastIndex = arr.length-1;
+      return arr[lastIndex];
+    }
+    console.log('11b')
+    console.log(getLastValue(arr));
+
+    // 11c 
+    function getLastValue(arr) {
+      const lastIndex = arr.length-1;
+
+      const lastValue = arr[lastIndex]; 
+      const firstValue = arr[0];
+
+      arr[0] = lastValue;
+      arr[lastIndex] = firstValue;
+
+      // return arr; 
+      console.log('11c')
+      console.log(arr);
+    }
+    // console.log('11c');
+    // console.log(arr);
+
+    //11d
+    console.log('11d');
+    for(let i = 0; i <= 10; i += 2) {
+      console.log(i);
+    } 
+
+    // 11e
+    console.log('11e');
+    for(let i = 5; i > 0; i--) {
+      console.log(i); 
+    }
+
+  </script>
+</body>
+</html>
