@@ -24,6 +24,7 @@
 
     console.log('another line');
 
+
     // 10:50 - forEach()
     console.log('- forEach() -');
 
@@ -32,9 +33,17 @@
       'watch youtube', 
       'wash dishes'
     ].forEach(function(value, index) {
+      // forEach don't have continue which we use to skip an iteraion - but we can do the same with return
+
+      if(value === 'wash dishes') {
+        return;
+      }
       console.log(index);
       console.log(value);
     });
+    // we also don't have break in forEach() - 
+    // so it's bette to use regular for loop if we want to use break statement;
+    
 
   </script>
 
