@@ -12,8 +12,17 @@
     setTimeout(function() {
       console.log('time out');
     }, 3000);
-
+    // below line will display first in the console
+    // because for the above function it sets the time and move to next code 
+    // this is called asynchronous code - won't wait for a line to finish before going to the next line
     console.log('next line');
+
+    // setInterval() - it will keep running the function every 3 seconds
+    // setInterval(function() {
+    //   console.log('interval');
+    // }, 3000);
+
+    console.log('another line');
 
   </script>
 
