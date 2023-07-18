@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>11 q</title>
+  <title>11 w</title>
 </head>
 <body>
   
@@ -21,7 +21,21 @@
       return -1;
     }
 
-    console.log(findIndex(['green', 'blue', 'red'], 'red'));
+    function unique(array) {
+      const result = []; 
+
+      for(let i = 0; i < array.length; i++) {
+        const word = array[i]; 
+
+        if(findIndex(result, word) === -1) {
+          result.push(word); 
+        }
+      }
+      return result; 
+    }
+
+    console.log(findIndex(['green', 'blue', 'red'], 'green'));
+    console.log(unique(['red', 'green', 'red', 'green']));
 
   </script>
 
