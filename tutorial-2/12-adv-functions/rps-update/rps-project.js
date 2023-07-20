@@ -32,6 +32,21 @@ function autoPlay() {
   }
 }
 
+const rockBtn = document.querySelector('rock-btn');
+rockBtn.addEventListener('click', () => {
+  playGame('rock');
+});
+
+const paperBtn = document.querySelector('.paper-btn');
+paperBtn.addEventListener('click', () => {
+  playGame('paper');
+});
+
+const scissorsBtn = document.querySelector('.scissors-btn')
+scissorsBtn.addEventListener('click', () => {
+  playGame('scissors');
+});
+
 function playGame(PlayerMove) {
   const computerMove = pickComputerMove();
 

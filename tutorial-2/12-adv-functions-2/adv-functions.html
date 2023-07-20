@@ -6,6 +6,8 @@
   <title>advance functions 2</title>
 </head>
 <body>
+
+  <button class="btn">Click</button>
   
   <script>
 
@@ -55,8 +57,24 @@
         
       }
     };
-    
+
     */
+
+    // using click eventListener instead of onClick() attribute
+    const btn = document.querySelector('.btn');
+    const eventListener = () => {
+      console.log('clicked');
+    };
+
+    btn.addEventListener('click', eventListener);
+    // we can also remove a eventListener
+    // while giving the function as a parameter we have to save the function inside a variable
+    btn.removeEventListener('click', eventListener);
+
+     // we can add multiple events 
+     btn.addEventListener('click', () => {
+      console.log('clicked2');
+    });
 
   </script>
 
