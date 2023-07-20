@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>advance functions 2</title>
+</head>
+<body>
+  
+  <script>
+
+    /* regular function */
+    const regularFuntion = function(param) {
+      console.log('hello');
+    }
+    regularFuntion();
+
+    /* arrow functions */
+    const arrowFunction = (param) => {
+      console.log('hello');
+    }
+    arrowFunction();
+
+    // when the arrow function contains single parameters we can remove the brackets
+    const oneParam = param => {
+      console.log(param + 1);
+    }
+    oneParam(2);
+
+    // when the arrow function contains only one line 
+    // we can remove the brackets(it is optional) 
+    // and also we remove the return statement
+    const oneLine = () => 2 + 3;
+    console.log(oneLine());
+
+    console.log('-for each with => function');
+    [
+      'make dinner', 
+      'watch youtube', 
+      'wash dishes'
+    ].forEach((value, index) => {
+      // forEach don't have continue which we use to skip an iteraion - but we can do the same with return
+
+      if(value === 'wash dishes') {
+        return;
+      }
+      console.log(index);
+      console.log(value);
+    });
+
+    
+
+  </script>
+
+</body>
+</html>
