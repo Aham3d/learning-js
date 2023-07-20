@@ -32,7 +32,7 @@ function autoPlay() {
   }
 }
 
-const rockBtn = document.querySelector('rock-btn');
+const rockBtn = document.querySelector('.rock-btn');
 rockBtn.addEventListener('click', () => {
   playGame('rock');
 });
@@ -47,10 +47,21 @@ scissorsBtn.addEventListener('click', () => {
   playGame('scissors');
 });
 
+document.body.addEventListener('keydown', (event) => {
+  if(event.key === 'r') {
+    playGame('rock');
+  } else if(event.key === 'p') {
+    playGame('paper');
+  } else if(event.key === 's') {
+    playGame('scissors');
+  }
+});
+
 function playGame(PlayerMove) {
   const computerMove = pickComputerMove();
 
   let result = '';
+  
   if(PlayerMove === 'scissors') {
     if (computerMove === 'Scissors') {
       result = 'Tie'; 
