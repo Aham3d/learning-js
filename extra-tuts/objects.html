@@ -64,6 +64,30 @@
     let pizza1 = new MakePizza('margharita sp', 'large', 'white', 'plain', '1/2 hour');
     
     
+    // constructor with class
+    class MakePizza2 {
+      constructor(pizzaName2, pizzaSize2, pizzaSauce2, pizzaToppings2, pizzaTime2) {
+        // properties
+        this.name1 = pizzaName2
+        this.size2 = pizzaSize2
+        this.sauce2 = pizzaSauce2
+        this.topppings2 = pizzaToppings2
+        this.time2 = pizzaTime2
+      }
+      // methods
+      taste2 = function() {
+        console.log('yum');
+      }
+      left2 = function() {
+        console.log('none');
+      }
+      deliveryTime2 = function() {
+        console.log(`arrives in${time2}`);
+      }
+    }
+
+    let pizza2 = new MakePizza2('crust', 'large', 'barbeque sauce', ['mushrooms', 'chicken', 'onion'], 1);
+    
   </script>
 </body>
 </html>
