@@ -18,14 +18,52 @@
 
     */ 
     // example
-    let watch = {}; //absolute literal
+    let watch = {}; // literal notation
     watch.currentTime = 8; 
     watch.tellTime = function(time) {
       console.log(`current time is ${time}:`);
     }
-
     watch.tellTime(watch.currentTime);
    
+
+    // create a pizza object that has 4 properties and 3 methods
+    // let pizza = {}; 
+    // // properties = variables
+    // pizza.name = 'curst pizza'
+    // pizza.size = 'large'
+    // pizza.toppings = ['mushrooms', 'chicken', 'onion']
+    // pizza.sauce = 'white'
+    // // methods
+    // pizza.deliveryTime = function() {
+    //   console.log('calculating');
+    // };
+    // pizza.Taste = function() {
+    //   console.log('good');
+    // };
+    // pizza.lefts = function() {
+    //   console.log('none');
+    // };
+
+    // if we had to create more pizza object we don't need to copy paste the
+    // whole code and chaneg the values, instead we can create a constructor
+    function MakePizza(pizzaName, pizzaSize, pizzaSauce, pizzaToppings, pizzaTime) {
+      // properties
+      this.name = pizzaName
+      this.size = pizzaSize
+      this.sauce = pizzaSauce
+      this.toppings = pizzaToppings
+      this.deliveryTime = pizzaTime
+      // methods
+      this.taste = function() {
+        console.log('good');
+      }; 
+      this.left = function() {
+        console.log('1');
+      }
+    };
+    let pizza1 = new MakePizza('margharita sp', 'large', 'white', 'plain', '1/2 hour');
+    
+    
   </script>
 </body>
 </html>
