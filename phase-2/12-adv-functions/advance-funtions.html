@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>advanced functions</title>
+</head>
+<body>
+
+  <script>
+
+    // shortcut function advantage -
+    // 1 - easy to read
+    // 2 - hoisting - we can call the function before even creating a function 
+    // we don't to worry abou the order of code
+    function greetings() {
+      console.log('hello');
+    };
+
+    greetings();
+
+    // functions is another type of value and we can save it in a variable
+    // above function is a shortcut for below this code
+    // below function doesn't support hoisting when we save the function inside a variable
+    const function1 = function greeting() {
+      console.log('hello 2');
+    };
+
+    console.log(function1);
+    function1();
+
+
+    // function inside a object - method
+    const object1 = {
+      num: 2, 
+      // anonnymus function - without the function name
+      fun: function() {
+        console.log('hello3'); 
+      }
+    };
+    // calling the function with dot notation
+    object1.fun();
+
+
+    // passing a value into a function - parameteres using as variable
+    function display(param) {
+      console.log(param);
+    } 
+    display(2);
+
+
+    // passing a function into another function - callback()
+    function run(param) {
+      param();
+    }
+    run(function() {
+      console.log('hello4');
+    });
+
+  </script> 
+</body>
+</html>

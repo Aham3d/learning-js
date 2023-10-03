@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <!-- 9a -->
+  <button>9a</button>
+
+  <!-- 9b -->
+  <button class="button" onclick="
+    change();
+  ">9b</button>
+
+  <!-- 9c -->
+  <button
+    onclick="
+      displayLine.innerHTML = 'you choose: heads'
+    "
+  >
+    Heads
+  </button>
+  <button
+    onclick="
+      displayLine.innerHTML = 'you choose: tails'
+    "
+  >
+  Tails
+  </button>
+  <p class="display-p">line</p>
+
+  <!-- 9d 9e 9f 9h-->
+  <input type="text" placeholder="text" onkeydown="inputDisplay()" onkeyup="display()">
+  <button
+    onclick="
+    display();
+    "
+  >
+    Submit
+  </button>
+  <p class="text">
+
+  </p>
+
+
+  <script>
+    // 9a
+    console.log(document.querySelector('button'));
+
+    // 9b
+    const btn = document.querySelector('.button')
+    function change() {
+      btn.innerHTML = '9b done';
+    }
+    
+    // 9c 
+    const displayLine = document.querySelector('.display-p');
+
+    // 9d 9e 9f 9h
+    const input = document.querySelector('input');
+    const text = document.querySelector('.text');
+    const inText = input.value;
+    function display() {
+      text.innerHTML = `your name is: ${input.value}`;
+    }
+
+    function inputDisplay() {
+      if(event.key === 'Enter') {
+        display();
+      }
+    }
+
+  </script>
+</body>
+</html>
