@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>12i</title>
+</head>
+<body>
+
+  <button class="add"
+    onclick="add();"
+  >
+    Add
+  </button>
+
+  <button class="Remove"
+    onclick="remove();"
+  >
+    Remove
+  </button>
+  
+  <script>
+
+    let messages = 2; 
+
+    setInterval(function() {
+      if(document.title === '12i') {
+        document.title = `(${messages}) New messages`;
+      } else {
+        document.title = '12i';
+      }
+    }, 1000);   
+
+    function add() {
+      if(messages >= 0) {
+        messages++;
+      } else {  
+        messages = 0; 
+      }
+    }
+
+    function remove() {
+      if(messages <= 0) {
+        messages = 0; 
+      } else {
+        messages--;
+      }
+    }
+    
+  </script>
+
+</body>
+</html>
